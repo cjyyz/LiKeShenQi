@@ -1,0 +1,61 @@
+<!--pages/major/paloha/paloha.wxml-->
+<view class='title'>纯ALOHA</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">用户数:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="yi" type="digit" placeholder="单位：个" placeholder-class='place'/>
+  </view>
+</view> 
+
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">信道速率:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="er" type="digit" placeholder="单位：bps" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">包长:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="san" type="digit" placeholder="单位：bit" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">退避系数:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="si" type="digit" placeholder="K - 1" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+</form>
+
+<view style='clear:both' class='results' wx:if="{{result != 0}}">
+  <view wx:if="{{result != ''}}">
+    <text>
+      总到达率\n {{ result }}packets/s
+      平均重传次数\n {{ result1 }} 次
+      平均退避时延\n {{ result2 }} ms
+      平均传输时延\n {{ result3 }} ms
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  注：\n最大吞吐量时 G = 0.5\n故 S = 0.1839
+  计算公式：\nX = L/C\n S = λMX\n N = e^2G - 1\n B = (K-1)*P/2\n T = N(1+B)+1\n
+  </text>
+</view>

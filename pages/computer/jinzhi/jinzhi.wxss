@@ -1,0 +1,87 @@
+/* pages/computer/jinzhi/jinzhi.wxss */
+.title{
+  font-size: 50rpx;
+  font-family: Arial;
+  font-weight: bold;
+  color: #1296db;
+  text-align: center;
+  margin: 50rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 8rpx dashed #1296db
+}
+.container{
+  /*border: 1px solid;*/
+  display: flex;
+}
+.weui-cells_title{
+  width: 370rpx;
+  font-size: 40rpx;
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 10rpx;
+  text-align: right;
+  /*border: 1px solid;*/
+}
+
+.weui-cell_input{
+  height: 80rpx;
+  width: 270rpx;
+  /*border: 1px solid;*/
+  margin-left: 50rpx;
+}
+.place{
+  font-size: 40rpx;
+  font-family:Arial;
+  font-style: italic;
+  text-align: center;
+}
+.input{
+  border: 6rpx solid #ccc;
+  border-radius: 20rpx;
+  height: 60rpx;
+}
+.blank{
+  display: flex;
+  margin-left: 80rpx;
+  width: 600rpx;
+  margin-bottom: 25rpx;
+}
+.units{
+  margin-left: 215rpx;
+  font-size: 40rpx;
+  font-style: Arial;
+  padding-top:20rpx;
+  margin-bottom: 75rpx;
+}
+.radio{
+  /*border: 1px solid;*/
+  top:35%;
+  left: 10%;
+  padding-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  justify-content: center;
+  font-size: 40rpx;
+  
+}
+.btn1{
+  margin-top: 20rpx;
+  margin-left: 140rpx;
+  /*border: 1px solid black;*/
+  float: left;
+  margin-bottom: 30rpx;
+}
+.btn2{
+  margin-top: 20rpx;
+  margin-right: 140rpx;
+  /*border: 1px solid black;*/
+  float: right;
+}
+.results{
+  border-top: 5rpx dashed #ccc;
+  text-align: center;
+  font-size: 40rpx;
+}
+.copyright{
+  margin-left: 40rpx;
+}

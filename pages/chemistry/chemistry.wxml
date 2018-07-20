@@ -1,0 +1,7 @@
+<!--pages/chemistry/chemistry.wxml-->
+<button type="button" class="btn1" bindtap='jumpmole'
+        style="background-color: #FFFFFF;color: #00BFFF">相对分子质量
+</button>
+<button type="button" class="btn1" bindtap='jumpsolution'
+        style="background-color: #FFFFFF;color: #00BFFF">溶液配制
+</button>

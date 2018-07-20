@@ -1,0 +1,28 @@
+<!--pages/major/major.wxml-->
+<button type="button" class="btn1" bindtap='jumpentropy'
+        style="background-color: #FFFFFF;color: #00BFFF">信息熵
+</button>
+<button type="button" class="btn1" bindtap='jumpfdma'
+        style="background-color: #FFFFFF;color: #00BFFF">FDMA
+</button>
+<button type="button" class="btn1" bindtap='jumptdma'
+        style="background-color: #FFFFFF;color: #00BFFF">TDMA
+</button>
+<button type="button" class="btn1" bindtap='jumpcdma'
+        style="background-color: #FFFFFF;color: #00BFFF">CDMA
+</button>
+<button type="button" class="btn1" bindtap='jumpbsc'
+        style="background-color: #FFFFFF;color: #00BFFF">BSC
+</button>
+<button type="button" class="btn1" bindtap='jumpawgn'
+        style="background-color: #FFFFFF;color: #00BFFF">AWGN
+</button>
+<button type="button" class="btn1" bindtap='jumpbf'
+        style="background-color: #FFFFFF;color: #00BFFF">爱尔兰B公式
+</button>
+<button type="button" class="btn1" bindtap='jumpcf'
+        style="background-color: #FFFFFF;color: #00BFFF">爱尔兰C公式
+</button>
+<button type="button" class="btn1" bindtap='jumppaloha'
+        style="background-color: #FFFFFF;color: #00BFFF">纯ALOHA
+</button>

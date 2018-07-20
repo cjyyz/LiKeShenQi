@@ -1,0 +1,25 @@
+<!--index.wxml-->
+
+<button type="button" class="btn1" bindtap='jumpmath'
+        style="background-color: #FF0000;color: #FFFFFF;">数学类
+</button>
+
+<button type="button" class="btn2" bindtap='jumpcomputer'
+        style="background-color: #FFA500;color: #FFFFFF">计算机
+</button>
+
+<button type="button" class="btn1" bindtap='jumpphysics' 
+        style="background-color: #32CD32;color: #FFFFFF">物理类
+</button>
+
+<button type="button" class="btn2" bindtap='jumpchemistry' 
+        style="background-color: #00BFFF;color: #FFFFFF">化学类
+</button>
+
+<button type="button" class="btn1" bindtap='jumpmajor'
+        style="background-color: #BA55D3;color: #FFFFFF">专业类
+</button>
+
+<button type="button" class="btn2" bindtap='jumpcustom'
+        style="background-color: #696969;color: #FFFFFF">自定义
+</button>

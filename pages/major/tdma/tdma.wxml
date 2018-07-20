@@ -1,0 +1,58 @@
+<!--pages/major/tdma/tdma.wxml-->
+<view class='title'>CDMA</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">用户数:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="yi" type="digit" placeholder="单位：个" placeholder-class='place'/>
+  </view>
+</view> 
+
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">信道速率:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="er" type="digit" placeholder="单位：bps" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">包长:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="san" type="digit" placeholder="单位：bit" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">参数:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="si" type="digit" placeholder="λ" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+</form>
+
+<view style='clear:both' class='results' wx:if="{{result != 0}}">
+  <view wx:if="{{result != ''}}">
+    <text>
+      吞吐量为\n {{ result }}
+      平均转发时延为\n {{ result1 }} ms
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  计算公式\n X = L/C\n S = λMX\n T = MX/(2-2S) + X
+  </text>
+</view>

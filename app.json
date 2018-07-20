@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/computer/computer",
+    "pages/math/math",
+    "pages/physics/physics",
+    "pages/chemistry/chemistry",
+    "pages/major/major",
+    "pages/custom/custom",
+    
+    "pages/math/factorial/factorial",
+    "pages/math/miyunsuan/miyunsuan",
+    "pages/math/duishu/duishu",
+    "pages/math/average/average",
+
+    "pages/computer/jinzhi/jinzhi",
+    "pages/computer/qtjinzhi/qtjinzhi",
+
+    "pages/physics/force/force",
+    "pages/physics/pendulum/pendulum",
+    "pages/physics/wave/wave",
+
+    "pages/chemistry/solution/solution",
+    "pages/chemistry/molecular/molecular",
+
+    "pages/major/entropy/entropy",
+    "pages/major/bformula/bformula",
+    "pages/major/cformula/cformula",
+    "pages/major/bsc/bsc",
+    "pages/major/awgn/awgn",
+    "pages/major/fdma/fdma",
+    "pages/major/tdma/tdma",
+    "pages/major/cdma/cdma",
+    "pages/major/paloha/paloha"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "理科神器",
+    "navigationBarTextStyle":"white"
+  }
+}

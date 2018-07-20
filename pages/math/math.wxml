@@ -1,0 +1,13 @@
+<!--pages/math/math.wxml-->
+<button type="button" class="btn1" bindtap='jumpjie'
+        style="background-color: #FFFFFF;color: #00BFFF">阶乘
+</button>
+<button type="button" class="btn1" bindtap='jumpmi'
+        style="background-color: #FFFFFF;color: #00BFFF">幂运算
+</button>
+<button type="button" class="btn1" bindtap='jumpdui'
+        style="background-color: #FFFFFF;color: #00BFFF">对数运算
+</button>
+<button type="button" class="btn1" bindtap='jumpave'
+        style="background-color: #FFFFFF;color: #00BFFF">求平均数
+</button>

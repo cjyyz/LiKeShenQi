@@ -1,0 +1,67 @@
+<!--pages/chemistry/solution/solution.wxml-->
+<view class='title'>溶液配制</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">浓度:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="con" type="digit" placeholder="浓度" placeholder-class='place'/>
+  </view>
+</view> 
+  <view class="radio" style='clear:both'>
+      <radio-group name="con_unit">
+        <label><radio value="1"/>μM</label>
+        <text space="emsp">　</text>
+        <label><radio value="1000"/>mM</label>
+        <text space="emsp">　</text>
+        <label><radio value="1000000"/>M</label>
+      </radio-group>
+  </view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">体积:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="vol" type="digit" placeholder="体积" placeholder-class='place'/>
+  </view>
+</view>
+<view class="radio" style='clear:both'>
+    <radio-group name="vol_unit">
+      <label><radio value="1"/>μL</label>
+      <text space="emsp">　</text>
+      <label><radio value="1000"/>mL</label>
+      <text space="emsp">　</text>
+      <label><radio value="1000000"/>L</label>
+    </radio-group>
+</view>
+<view class='blank'></view>
+
+<view class='container'>
+  <view class="weui-cells_title">摩尔质量:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="molecularweitht" type="digit" placeholder="摩尔质量" placeholder-class='place'/>
+  </view>
+</view>
+<view style='clear:both' class='units'>g/mol</view>
+
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+
+</form>
+
+<view style='clear:both' class='results' wx:if="{{make_weight != 0}}">
+  <view wx:if="{{make_weight != ''}}">
+    <text>
+      配置该溶液需要\n {{ make_weight }} {{make_unit}}\n 的化合物.
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  根据所需溶液浓度、体积和摩尔质量，\n求得需要的化合物质量。
+  </text>
+</view>

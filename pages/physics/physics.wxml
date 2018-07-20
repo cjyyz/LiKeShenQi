@@ -1,0 +1,10 @@
+<!--pages/physics/physics.wxml-->
+<button type="button" class="btn1" bindtap='jumppend'
+        style="background-color: #FFFFFF;color: #00BFFF">单摆
+</button>
+<button type="button" class="btn1" bindtap='jumpmi'
+        style="background-color: #FFFFFF;color: #00BFFF">合力计算
+</button>
+<button type="button" class="btn1" bindtap='jumpwave'
+        style="background-color: #FFFFFF;color: #00BFFF">波的能量
+</button>

@@ -1,0 +1,178 @@
+<!--pages/chemistry/molecular/molecular.wxml-->
+<view class='title'>相对分子质量</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">H:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="h" type="digit" placeholder="氢" placeholder-class='place'/>
+  </view>
+</view> 
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">C:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="c" type="digit" placeholder="碳" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">N:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="n" type="digit" placeholder="氮" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">O:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="o" type="digit" placeholder="氧" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Na:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="na" type="digit" placeholder="钠" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Mg:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="mg" type="digit" placeholder="镁" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Al:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="al" type="digit" placeholder="铝" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Si:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="si" type="digit" placeholder="硅" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">P:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="p" type="digit" placeholder="磷" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">S:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="s" type="digit" placeholder="硫" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Cl:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="cl" type="digit" placeholder="氯" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">K:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="k" type="digit" placeholder="钾" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Ca:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="ca" type="digit" placeholder="钙" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Mn:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="mn" type="digit" placeholder="锰" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Fe:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="fe" type="digit" placeholder="铁" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Cu:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="cu" type="digit" placeholder="铜" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Zn:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="zn" type="digit" placeholder="锌" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Ag:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="ag" type="digit" placeholder="银" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">Ba:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="ba" type="digit" placeholder="钡" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+
+</form>
+
+<view style='clear:both' class='results' wx:if="{{result != 0}}">
+  <view wx:if="{{result != ''}}">
+    <text>
+      结果为\n {{ result }}
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  相对原子质量\n H:1  C:12  N:14  O:16  Na:23  Mg:24  Al:27  Si:28  P:31  S:32  Cl:35.5  K:39  Ca:40  Mn:55  Fe:56
+    Cu:64  Zn:65  Ag:108  Ba:137
+  </text>
+</view>

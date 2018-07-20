@@ -1,0 +1,7 @@
+/* pages/math/math.wxss */
+.btn1{
+  height: 76px; 
+  vertical-align: middle;
+  line-height: 76px;
+  font-size: 24px;
+}

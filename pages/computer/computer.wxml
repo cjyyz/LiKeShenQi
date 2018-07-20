@@ -1,0 +1,7 @@
+<!--pages/computer/computer.wxml-->
+<button type="button" class="btn1" bindtap='jumpjinzhi'
+        style="background-color: #FFFFFF;color: #00BFFF">十进制数转换
+</button>
+<button type="button" class="btn1" bindtap='jumpqt'
+        style="background-color: #FFFFFF;color: #00BFFF">其他进制数转换
+</button>

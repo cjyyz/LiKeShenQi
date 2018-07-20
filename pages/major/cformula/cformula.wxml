@@ -1,0 +1,43 @@
+<!--pages/major/cformula/cformula.wxml-->
+<view class='title'>爱尔兰C公式</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">中继线数:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="zhong" type="digit" placeholder="单位：条" placeholder-class='place'/>
+  </view>
+</view> 
+
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">呼叫量:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="hu" type="digit" placeholder="单位：erl" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+
+</form>
+
+<view style='clear:both' class='results' wx:if="{{result != 0}}">
+  <view wx:if="{{result != ''}}">
+    <text>
+      呼叫等待概率为\n {{ result }}
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  爱尔兰等待系统\n计算公式\n C(s,a) = (a^s/s!) * [p0/(1-a/s)]\n p0 = 1/[∑(a^k/k!) + (a^s/s!)/(1-a/s)]
+  </text>
+</view>

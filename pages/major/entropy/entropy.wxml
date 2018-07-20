@@ -1,0 +1,67 @@
+<!--pages/major/entropy/entropy.wxml-->
+<view class='title'>信息熵</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">概率1:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="yi" type="digit" placeholder="p1" placeholder-class='place'/>
+  </view>
+</view> 
+
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">概率2:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="er" type="digit" placeholder="p2" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">概率3:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="san" type="digit" placeholder="p3" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">概率4:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="si" type="digit" placeholder="p4" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">概率5:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="wu" type="digit" placeholder="p5" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+
+</form>
+
+<view style='clear:both' class='results' wx:if="{{result != 0}}">
+  <view wx:if="{{result != ''}}">
+    <text>
+      结果为\n {{ result }}bit
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  计算公式\n H = -∑ pi*log(pi)\n
+  </text>
+</view>

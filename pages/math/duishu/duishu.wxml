@@ -1,0 +1,43 @@
+<!--pages/math/miyunsuan/miyunsuan.wxml-->
+<view class='title'>对数运算</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">底数:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="di" type="digit" placeholder="a" placeholder-class='place'/>
+  </view>
+</view> 
+
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">真数:</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="zhen" type="digit" placeholder="b" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+
+</form>
+
+<view style='clear:both' class='results' wx:if="{{result != 0}}">
+  <view wx:if="{{result != ''}}">
+    <text>
+      结果为\n {{ result }}
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  \n计算公式\n y = log(a)b
+  </text>
+</view>

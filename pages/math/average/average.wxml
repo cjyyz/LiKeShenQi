@@ -1,0 +1,146 @@
+<!--pages/math/average/average.wxml-->
+<view class='title'>求平均数</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container'>
+  <view class="weui-cells_title">1.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="h" type="digit" placeholder="数据一" placeholder-class='place'/>
+  </view>
+</view> 
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">2.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="c" type="digit" placeholder="数据二" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">3.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="n" type="digit" placeholder="数据三" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">4.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="o" type="digit" placeholder="数据四" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">5.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="na" type="digit" placeholder="数据五" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">6.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="mg" type="digit" placeholder="数据六" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">7.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="al" type="digit" placeholder="数据七" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">8.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="si" type="digit" placeholder="数据八" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">9.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="p" type="digit" placeholder="数据九" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">10.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="s" type="digit" placeholder="数据十" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">11.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="cl" type="digit" placeholder="数据十一" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">12.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="k" type="digit" placeholder="数据十二" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">13.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="ca" type="digit" placeholder="数据十三" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">14.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="mn" type="digit" placeholder="数据十四" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='container'>
+  <view class="weui-cells_title">15.</view>
+  <view class="weui-cell_input">
+    <input class= 'input' name="fe" type="digit" placeholder="数据十五" placeholder-class='place'/>
+  </view>
+</view>
+
+<view class='blank'></view>
+<view class='btn1'>
+  <button type='primary' formType="submit">计算</button>
+</view>
+<view class='btn2'>
+  <button type='primary' formType="reset">复位</button>
+</view>
+
+</form>
+
+<view style='clear:both' class='results' wx:if="{{result != 0}}">
+  <view wx:if="{{result != ''}}">
+    <text>
+      总和为\n {{ result }}
+      平均数为\n {{ average }}
+    </text>
+  </view>
+</view>
+<view style='clear:both' class='copyright'>
+  <text>
+  计算公式\n average = sum / n\n
+  </text>
+</view>
